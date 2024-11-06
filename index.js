@@ -1,10 +1,9 @@
-
-
-
-
-for (let i = 1; i <= 100; i++) {
-    if (i % 3 === 0 ){
-        continue;
+function generateRandomArray(num){
+    const arr =[];
+    for (i = 0; i < num; i++){
+        let randomNum = Math.floor(Math.random()* 100)
+        arr.push(randomNum)
     }
- console.log(i);
+    return arr;
 }
+console.log(generateRandomArray(10));
